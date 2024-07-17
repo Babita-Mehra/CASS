@@ -302,12 +302,15 @@ video {
 }
 
 .form-control {
-  min-height: 50px;
+  min-height: 54px;
   background-color: $white;
-  border: 0;
-  border-radius: 0px;
-
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+ border-radius: 5px;
+  border: 1px solid  #D6D6D6;
+ 
+}
+.reset a {
+  font-size: 16px;
+  text-decoration: none;
 }
 .Center {
   text-align: center;
@@ -368,9 +371,15 @@ select {
 }
 
 label.title {
-  font-weight: 400;
+  
   @include open;
-  font-size: 14px;
+  color: #000;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 8px;
 }
 
 ::-webkit-input-placeholder {
@@ -1989,7 +1998,7 @@ section.NewsMettings {
   padding-top: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   text-align: center;
   padding-bottom: 40px;
   position: relative;
@@ -1997,17 +2006,10 @@ section.NewsMettings {
   h1 {
     position: relative;
     z-index: 9;
-    display: table;
+    
   }
   &::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 210px;
-    background-size: cover;
-    height: 100%;
-    background-image: url(../img/title-background.svg);
+    
   }
 }
 
@@ -2191,7 +2193,7 @@ section.img_buttons {
     }
 
     .text_card_block {
-      padding: 24px;
+      padding: 16px;
       height: auto;
       .date {
         color: $black;
@@ -2287,12 +2289,13 @@ section.img_buttons {
   display: flex;
 }
 
-.main-services .img_button_row {
+.img_button_row {
   justify-content: center;
   height: 100%;
   margin-right: -27px;
   margin-left: -27px;
   row-gap: 40px;
+}
   .img_btn_col {
     padding-left: 12px;
     padding-right: 12px;
@@ -2352,11 +2355,14 @@ section.img_buttons {
     }
     .img_block_descr {
       background: #122A72;
-      color: #FFFFFF;
-      padding: 16px 24px 24px;
-      text-align: left;
+    color: #FFFFFF;
+    padding: 16px 24px 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
       p,
-      h4 {
+      h3 {
         color: #FFFFFF;
         align-items: center;
         img {
@@ -2364,8 +2370,10 @@ section.img_buttons {
           margin-left: 8px;
         }
       }
-      h4{
-        margin-bottom: 8px;
+      h3{
+        margin-bottom: 0px;
+        font-size: 21px;
+        font-weight: 700;
       }
       p {
         &:last-child{
@@ -2393,7 +2401,7 @@ section.img_buttons {
       }
     }
   }
-}
+
 
 .img_buttons .img_button_row .img_btn_col .img_block {
   padding: 0px;
@@ -2866,8 +2874,8 @@ h2 + .expand_img_grid {
   }
   .expand_det {
     text-align: left;
-    padding: 16px;
-    padding-bottom: 20px;
+    padding:8px 16px;
+    padding-bottom: 8px;
     /*  background: #fff;*/
     .title {
       color: $primary;
@@ -2894,7 +2902,7 @@ line-height: normal;
     display: block;
     overflow: hidden;
     padding: 1em 0;
-    margin: 0px -5px;
+    margin: 0px -12px;
     padding-top: 0px;
     > li {
       -webkit-box-sizing: border-box;
@@ -7059,7 +7067,7 @@ button.multiselect.dropdown-toggle.btn.btn-default {
   background: $primary !important;
 } 
 .event .titile-wrap {
-  background: $defultbg;
+  
   margin-bottom: 24px;
 }
 .event-detail{
@@ -7300,4 +7308,60 @@ ul.list-unstyled .init:after {
 }
 .faq {
   background: $defultbg;
+}
+.page_title.pg-builder.no-img {
+  max-width: 1200px;
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+}
+.page_title {
+  max-width: 1200px;
+  width: 100%;
+  padding-left:15px;
+  padding-right:15px;
+  margin: 0px auto;
+ 
+}
+.proc_filter.servc-filter {
+  background: #F8F7F3;
+  padding: 24px 16px;
+}
+.service-page {
+  margin-bottom: 40px;
+}
+.service-wrap {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  .img_btn_col a {
+    text-decoration: none;
+    &:hover{
+     h3 {
+        color: $lightgreen;
+        text-decoration: underline;
+    }
+    .img_block .allBtn {
+      background: #AEDC85;
+  }
+    }
+}
+  .loaction {
+    font-weight: 600;
+}
+.img_btn_col .img_block .allBtn a{
+  background-color: $secondary;
+  border-color:$secondary;
+  &:hover{
+    background-color: $lightgreen;
+  border-color:$lightgreen;
+  }
+}
+.allBtn {
+  background-color: #62AC1E;
+  border-color: #62AC1E;
+  padding: 8px 16px;
+  color: #000000;
+  font-size: 16px;
+}
 }
