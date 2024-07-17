@@ -1918,16 +1918,25 @@ section.NewsMettings {
 .page_title {
   padding-top: 40px;
   display: flex;
-  align-items: center;
+  align-items: normal;
   justify-content: left;
-  text-align: center;
   padding-bottom: 40px;
   position: relative;
+  flex-direction: column;
 }
 .page_title h1 {
   position: relative;
   z-index: 9;
 }
+.page_title::after {
+  content: "";
+  width: 97px;
+  height: 5px;
+  display: block;
+  background-color: #EBC500;
+  margin-top: 8px;
+}
+
 .generic_middle_block {
   max-width: 900px;
   margin-left: auto;
@@ -6960,6 +6969,9 @@ ul.list-unstyled .init:after {
   margin: 0px auto;
   text-align: center;
 }
+.page_title.pg-builder.no-img::after {
+  content: none;
+}
 
 .page_title {
   max-width: 1200px;
@@ -6976,6 +6988,9 @@ ul.list-unstyled .init:after {
 
 .service-page {
   margin-bottom: 40px;
+}
+.service-page .container {
+  padding: 0px;
 }
 
 .service-wrap {

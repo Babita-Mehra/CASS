@@ -1081,9 +1081,12 @@
   .main_header .navbar .logo_wrap {
     padding-left: 16px;
   }
+  .main_header .navbar ul {
+    padding: 0 16px;
+  }
   .main_header .nav_bottom {
     background: #FFFFFF;
-    padding: 16px 24px 32px 24px;
+    padding: 16px 0px 32px;
     gap: 0;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.149);
   }

@@ -1997,19 +1997,24 @@ section.NewsMettings {
 .page_title {
   padding-top: 40px;
   display: flex;
-  align-items: center;
+  align-items: normal;
   justify-content: left;
-  text-align: center;
   padding-bottom: 40px;
   position: relative;
+  flex-direction: column;
 
   h1 {
     position: relative;
     z-index: 9;
     
   }
-  &::before {
-    
+  &::after {
+    content: "";
+    width: 97px;
+    height: 5px;
+    display: block;
+    background-color: #EBC500;
+    margin-top: 8px;
   }
 }
 
@@ -7315,6 +7320,9 @@ ul.list-unstyled .init:after {
   display: block;
   margin: 0px auto;
   text-align: center;
+  &::after{
+    content: none;
+  }
 }
 .page_title {
   max-width: 1200px;
@@ -7330,6 +7338,9 @@ ul.list-unstyled .init:after {
 }
 .service-page {
   margin-bottom: 40px;
+  .container {
+    padding: 0px;
+}
 }
 .service-wrap {
   padding-top: 40px;

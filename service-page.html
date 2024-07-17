@@ -303,69 +303,29 @@
              }
          });
       </script>
-      <script>
-         (function($) {
-             /* $('.accordion_event > li:eq(0) .acco_title').addClass('active').next().slideDown();*/
+     <script>
+      const counters = document.querySelectorAll('.value');
+      const speed = 100;
+      
+      counters.forEach( counter => {
+         const animate = () => {
+            const value = +counter.getAttribute('akhi');
+            const data = +counter.innerText;
+           
+            const time = value / speed;
+           if(data < value) {
+                counter.innerText = Math.ceil(data + time);
+                setTimeout(animate, 1);
+              }else{
+                counter.innerText = value;
+              }
+           
+         }
          
-             $('.acc__main .acc__title').click(function(j) {
-                 var dropDown = $(this).closest('.acc__card').find('.acc__panel');
-         
-                 $(this).closest('.acc__main').find('.acc__panel').not(dropDown).slideUp();
-         
-                 if ($(this).hasClass('active')) {
-                     $(this).removeClass('active');
-                 } else {
-                     $(this).closest('.acc__main').find('.acc__title.active').removeClass('active');
-                     $(this).addClass('active');
-                 }
-         
-                 dropDown.stop(false, true).slideToggle();
-         
-                 j.preventDefault();
-             });
-         })(jQuery);
-      </script>
-      <script>
-         (function($) {
-             /* $('.accordion_event > li:eq(0) .acco_title').addClass('active').next().slideDown();*/
-         
-             $('.service_acco .main_acco_sv').click(function(j) {
-                 var dropDown = $(this).closest('.accordion_bk').find('.acco_panel_sv');
-         
-                 $(this).closest('.service_acco').find('.acco_panel').not(dropDown).slideUp();
-         
-                 if ($(this).hasClass('active')) {
-                     $(this).removeClass('active');
-                 } else {
-                     $(this).closest('.service_acco').find('.main_acco_sv.active').removeClass('active');
-                     $(this).addClass('active');
-                 }
-         
-                 dropDown.stop(false, true).slideToggle();
-         
-                 j.preventDefault();
-             });
-         })(jQuery);
-         (function($) {
-             /* $('.accordion_event > li:eq(0) .acco_title').addClass('active').next().slideDown();*/
-         
-             $('.accordion_era .main_acco_title').click(function(j) {
-                 var dropDown = $(this).closest('.accordion_block').find('.acco_panel');
-         
-                 $(this).closest('.accordion_era').find('.acco_panel').not(dropDown).slideUp();
-         
-                 if ($(this).hasClass('active')) {
-                     $(this).removeClass('active');
-                 } else {
-                     $(this).closest('.accordion_era').find('.main_acco_title.active').removeClass('active');
-                     $(this).addClass('active');
-                 }
-         
-                 dropDown.stop(false, true).slideToggle();
-         
-                 j.preventDefault();
-             });
-         })(jQuery);
-      </script>
+         animate();
+      });
+      
+      
+   </script>
    </body>
 </html>
