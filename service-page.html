@@ -5,26 +5,18 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <title>Service Page </title>
+      <title>service page</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/custom.css">
       <link rel="stylesheet" href="css/responsive.css">
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/multi-select/0.9.12/js/jquery.multi-select.js"></script>
-     
-
-
-      <script type="text/javascript" src="js/bootstrap-3.3.2.min.js"></script>  
-  <script src="js/bootstrap-multiselect.js"></script>  
-  <link rel="stylesheet" href="css/bootstrap-multiselect.css"> 
    </head>
+   <body>
    <body>
       <header class="main_header">
          <div class="navbar navbar-expand-xl">
@@ -101,7 +93,7 @@
             </div>
          </div>
       </header>
-      <div class="main_wrapper event" style="">
+      <div class="main_wrapper service-page">
         
             <div class="titile-wrap">
                <div class="main_breadcrumb">
@@ -122,7 +114,7 @@
                   <h1>Services & Programs</h1>
                </div>
             </div>
-         <div class="service-page">
+         <div class="service-wrap">
             <div class="container ">
                <div class="row mt_row">
                   <div class="col-lg-3 col_left">
@@ -142,7 +134,7 @@
 </div>
                         
                      </div>
-                     
+                      
                      
                      
                      
@@ -156,7 +148,7 @@
             </div>
          </div>
         
-         <div class="service-wrap">
+         <div class="main-services">
             <div class="container ">
                
                <div class="img_button_row row">
@@ -169,8 +161,46 @@
                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                         </div>
                         <div class="allBtn">
-                         Read More
+                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+                             Read more
+                            </button>
+                             <!-- Modal -->
+                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+           <div class="modal-content service-popup">
+             <div class="modal-header">
+               <h2 class="modal-title" id="exampleModalLongTitle">Program Name</h2>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body ">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-6 ">
+                        <h3>Secondary line of text</h3>
+                        <div class="location">Location Name</div>
+                        <div class="address">
+                           1776 Tribute Road,<br> Suite 215,<br> Sacramento, CA 95815
                         </div>
+                        <p><strong>Welcome to the Lorem Ipsum Generator Pro, the ultimate source of placeholder text for all your design needs. Whether you're creating a website, designing a brochure, or crafting the next great novel, our nonsensical text will help you fill in those empty spaces with style.</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        </div>
+                     <div class="col-lg-6">
+                        <img src="img/vid-img.png" alt="">
+                        
+                     </div>
+                  </div>
+                </div>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
+             </div>
+           </div>
+         </div><!--modal-end-->
+                        </div>
+                     </div>
                      </div></a>
                   </div>
                   <div class="col-md-4 img_btn_col ">
@@ -234,7 +264,44 @@
                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                         </div>
                         <div class="allBtn">
-                           Read More
+                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+                             Read more
+                            </button>
+                             <!-- Modal -->
+                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+           <div class="modal-content service-popup">
+             <div class="modal-header">
+               <h2 class="modal-title" id="exampleModalLongTitle">Program Name</h2>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body ">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-6 ">
+                        <h3>Secondary line of text</h3>
+                        <div class="location">Location Name</div>
+                        <div class="address">
+                           1776 Tribute Road,<br> Suite 215,<br> Sacramento, CA 95815
+                        </div>
+                        <p><strong>Welcome to the Lorem Ipsum Generator Pro, the ultimate source of placeholder text for all your design needs. Whether you're creating a website, designing a brochure, or crafting the next great novel, our nonsensical text will help you fill in those empty spaces with style.</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        </div>
+                     <div class="col-lg-6">
+                        <img src="img/vid-img.png" alt="">
+                        
+                     </div>
+                  </div>
+                </div>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
+             </div>
+           </div>
+         </div><!--modal-end-->
                         </div>
                      </div></a>
                   </div>
@@ -244,6 +311,10 @@
          </div>
 
       </div>
+
+      
+       
+      
       <footer class="footer ">
          <div class="footer-content">
             <div class="container ">
@@ -303,29 +374,19 @@
              }
          });
       </script>
-     <script>
-      const counters = document.querySelectorAll('.value');
-      const speed = 100;
-      
-      counters.forEach( counter => {
-         const animate = () => {
-            const value = +counter.getAttribute('akhi');
-            const data = +counter.innerText;
-           
-            const time = value / speed;
-           if(data < value) {
-                counter.innerText = Math.ceil(data + time);
-                setTimeout(animate, 1);
-              }else{
-                counter.innerText = value;
-              }
-           
+    <!-----------------Navigation------------------>
+    <script>
+      // Wait for the document to be ready
+      $(document).ready(function() {
+         if (window.matchMedia('(max-width: 1199.9px)').matches) {
+            // Get the top_search element
+            var topSearch = $(".top_search");
+            var topcontact = $(".top_header_cont");
+            // Move top_search outside of nav_bottom
+            $(".nav_bottom").after(topSearch);
+            $(".nav_bottom").after(topcontact);
          }
-         
-         animate();
       });
-      
-      
    </script>
    </body>
 </html>
