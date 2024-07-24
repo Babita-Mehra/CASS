@@ -630,6 +630,12 @@
   .img_button_row .img_btn_col .img_block .allBtn {
     bottom: -14px;
   }
+  .carousel-control-next img, .carousel-control-prev img {
+    background: #AEDC85;
+    width: 40px;
+    height: 34px;
+    padding: 6px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .page-id-31040 .advgb-column-inner {
@@ -681,6 +687,12 @@
   .footer_grid_col:first-child p a {
     max-width: 250px;
     display: block;
+  }
+  .carousel-control-next img, .carousel-control-prev img {
+    background: #AEDC85;
+    width: 52px;
+    height: 52px;
+    padding: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -807,8 +819,57 @@
   .accoRt_block .rtTitleWrap p {
     padding-left: 30px;
   }
+  .filterWrap-meetdt.dflex {
+    display: block;
+  }
+  .filterWrap.dflex {
+    display: block;
+    max-width: 100%;
+  }
+  .list_grid_view {
+    justify-content: flex-start;
+  }
+  .meeting-wraper .filterWrap-meet.dflex .search-box, .meeting-wraper .catg-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 @media (max-width: 1199.9px) {
+  .accordion_era {
+    padding: 0px 16px;
+  }
+  .meet-srch-wrap .search-wrap {
+    max-width: 100%;
+    width: 100%;
+  }
+  .search-box {
+    max-width: 100%;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .filterWrap-meetdt.dflex {
+    display: block;
+  }
+  .filterWrap.dflex {
+    display: block;
+    max-width: 100%;
+  }
+  .list_grid_view {
+    justify-content: flex-start;
+  }
+  .meeting-wraper .filterWrap-meet.dflex .search-box, .meeting-wraper .catg-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+  .filterWrap-meetdt.dflex, .filterWrap-meetdt {
+    display: block !important;
+  }
+  .inner-pg-bnner .carousel-control-prev, .inner-pg-bnner .carousel-control-next {
+    width: 4%;
+  }
+  .filterWrap.dflex {
+    display: block;
+  }
   .main_header .top_menu {
     display: flex;
     justify-content: flex-start;
