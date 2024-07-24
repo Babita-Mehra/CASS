@@ -782,6 +782,11 @@
 .story-wrap .col-md-3, .img_button_row .col-md-3, .news-meeting-row.row .col-md-3{max-width: 100%;}
 }
 @media (max-width:992px) {
+    .search_filter_title .filterWrap{display: block;}
+    .career_wrap .container-fluid .col-md-4.cols_left{padding:30px 15px ;}
+    .career_wrap .container-fluid .dp_detail_info{padding:30px 0px ;}
+    .middle_wrap{padding: 0;}
+    .event-detail .row.mt_row{padding:0px;}
     .container-fluid {
         padding-left: 16px!important;
         padding-right: 16px;
